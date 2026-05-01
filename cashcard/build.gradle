@@ -26,6 +26,9 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs << '-parameters'
+}
 // This section causes useful test output to go to the terminal.
 test {
     testLogging {
