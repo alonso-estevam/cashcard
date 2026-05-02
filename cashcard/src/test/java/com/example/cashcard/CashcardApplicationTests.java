@@ -41,6 +41,6 @@ class CashcardApplicationTests {
 
 		assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 		assertThat(response.getBody()).isBlank();
-}
+	}
 
 }
